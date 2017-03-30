@@ -15,6 +15,7 @@
 		CF353E481E162D970094632B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF353E461E162D970094632B /* LaunchScreen.storyboard */; };
 		CF353E531E162D970094632B /* TestForceTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353E521E162D970094632B /* TestForceTouchTests.m */; };
 		CF353E5E1E162D970094632B /* TestForceTouchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353E5D1E162D970094632B /* TestForceTouchUITests.m */; };
+		CF353E6D1E162E410094632B /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353E6C1E162E410094632B /* TouchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		CF353E591E162D970094632B /* TestForceTouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestForceTouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF353E5D1E162D970094632B /* TestForceTouchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestForceTouchUITests.m; sourceTree = "<group>"; };
 		CF353E5F1E162D970094632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF353E6B1E162E410094632B /* TouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchView.h; sourceTree = "<group>"; };
+		CF353E6C1E162E410094632B /* TouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				CF353E461E162D970094632B /* LaunchScreen.storyboard */,
 				CF353E491E162D970094632B /* Info.plist */,
 				CF353E381E162D970094632B /* Supporting Files */,
+				CF353E6B1E162E410094632B /* TouchView.h */,
+				CF353E6C1E162E410094632B /* TouchView.m */,
 			);
 			path = TestForceTouch;
 			sourceTree = "<group>";
@@ -207,7 +212,7 @@
 				TargetAttributes = {
 					CF353E341E162D970094632B = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = T5EW9858SB;
+						DevelopmentTeam = 8SJXRJ78CW;
 						ProvisioningStyle = Automatic;
 					};
 					CF353E4D1E162D970094632B = {
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF353E6D1E162E410094632B /* TouchView.m in Sources */,
 				CF353E401E162D970094632B /* ViewController.m in Sources */,
 				CF353E3D1E162D970094632B /* AppDelegate.m in Sources */,
 				CF353E3A1E162D970094632B /* main.m in Sources */,
@@ -425,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T5EW9858SB;
+				DEVELOPMENT_TEAM = 8SJXRJ78CW;
 				INFOPLIST_FILE = TestForceTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tomfriwel.com.TestForceTouch;
@@ -437,7 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T5EW9858SB;
+				DEVELOPMENT_TEAM = 8SJXRJ78CW;
 				INFOPLIST_FILE = TestForceTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tomfriwel.com.TestForceTouch;

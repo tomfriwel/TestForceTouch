@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "TouchView.h"
 
-@interface ViewController ()
+@interface ViewController () <ForceTouchDelegate>
+
+@property (weak, nonatomic) IBOutlet TouchView *touchView;
 
 @end
 
@@ -16,13 +19,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.touchView.forceTouchDelegate = self;
 }
 
+-(void)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - ForceTouchDelegate
+
+-(void)forceDidChanged:(CGFloat)force {
+    
+}
+
+-(void)forceTouchBecomeMaximum {
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor grayColor];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [button addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
+    button.backgroundColor = [UIColor colorWithWhite:0.7 alpha:1];
+    [vc.view addSubview:button];
+    
+    
+    vc.transitioningDelegate = self;
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+-(void)forceTouchDidCanceled {
+    
 }
 
 
